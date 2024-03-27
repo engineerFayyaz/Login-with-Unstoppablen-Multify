@@ -4,7 +4,7 @@ import { Avatar, Button } from "@chakra-ui/react";
 
 const uauth = new UAuth({
   clientID: "1458e201-d57a-4b62-856e-a134be2cf02e",
-  redirectUri: "https://login-with-unstoppablen-multify.vercel.app/callback",
+  redirectUri: "https://codesinc-task-completed.vercel.app/callback",
 });
 
 function ConnectUNS() {

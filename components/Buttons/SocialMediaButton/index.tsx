@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   chakra,
@@ -10,15 +11,15 @@ import {
 import { FaTwitter, FaDiscord, FaGithub } from "react-icons/fa";
 import { ReactNode } from "react";
 
-const SocialButton = ({
-  children,
-  label,
-  href,
-}: {
+// Define SocialButtonProps interface
+interface SocialButtonProps {
   children: ReactNode;
   label: string;
   href: string;
-}) => {
+}
+
+// SocialButton component
+const SocialButton = ({ children, label, href }: SocialButtonProps) => {
   return (
     <chakra.button
       bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
@@ -43,6 +44,7 @@ const SocialButton = ({
   );
 };
 
+// SmallCentered component
 export default function SmallCentered() {
   return (
     <Box
@@ -50,7 +52,7 @@ export default function SmallCentered() {
       color={useColorModeValue("gray.700", "gray.200")}
     >
       <Box>
-        <Container
+        {/* <Container
           position="fixed"
           bottom="5rem"
           left="0.3rem"
@@ -65,7 +67,7 @@ export default function SmallCentered() {
           <Stack direction="row" spacing={6}>
             <SocialButton
               label="Twitter"
-              href="https://twitter.com/SabeloMkhwanaz"
+              href="https://twitter.com/codesinc_pak"
             >
               <FaTwitter />
             </SocialButton>
@@ -74,12 +76,12 @@ export default function SmallCentered() {
             </SocialButton>
             <SocialButton
               label="Github"
-              href="https://github.com/SabeloMkhwanzi/Multify-Analytics-Dashboard"
+              href="#"
             >
               <FaGithub />
             </SocialButton>
           </Stack>
-        </Container>
+        </Container> */}
       </Box>
     </Box>
   );
