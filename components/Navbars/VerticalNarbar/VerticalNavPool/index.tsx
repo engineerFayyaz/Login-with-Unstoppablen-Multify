@@ -140,7 +140,7 @@ export default function VerticalNarbar() {
       </Flex>
       <DarkModeButton />
       <SocialMediaButton />
-      <Flex mx="10" bottom={10} pos="fixed">
+      {/* <Flex mx="10" bottom={10} pos="fixed">
         <Text
           mb={2}
           color={useColorModeValue("green.400", "gray.400")}
@@ -151,7 +151,7 @@ export default function VerticalNarbar() {
         >
           made 🤍 by Codesinc
         </Text>
-      </Flex>
+      </Flex> */}
     </Box>
   );
 

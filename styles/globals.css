@@ -14,13 +14,75 @@ a {
 * {
   box-sizing: border-box;
 }
-
-
-.css-1ia1vse {
-  margin-left: 20px !important;
+@media (max-width: 1235px) {
+  .css-1kjoi7k {
+    flex-wrap: wrap;
+  }
+  .css-1v2k4t4 {
+    flex-wrap: wrap;
+  }
+  .css-1fc1t08 {
+    flex-wrap: wrap;
+  }
+  .css-1sinxa7 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
+@media (max-width: 980) {
+  .css-tx790g {
+    /* flex-wrap: wrap; */
+    display: flex;
+    gap: 10px;
+  }
+  .css-1sinxa7 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .css-11gds1h {
+    /* position: static; */
+    bottom: var(--chakra-space-1);
+    position: fixed;
+  }
+}
+@media (min-width: 768) {
+  .css-tx790g {
+    /* flex-wrap: wrap; */
+    display: flex;
+    gap: 10px;
+  }
+  .css-1sinxa7 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .css-11gds1h {
+    /* position: static; */
+    bottom: var(--chakra-space-1);
+    position: fixed;
+  }
+}
 
-.chakra-stack.chakra-container.css-1twtk95 {
-  margin-top: 150px !important;
+.css-1nb5sow {
+  position: static !important;
+}
+.makeStyles-tableContainer-5 {
+  margin-left: 0rem !important;
+}
+.css-bkz27f {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 786px) {
+  .css-8felte {
+    margin-left: 12rem;
+  }
+}
+
+.makeStyles-tableContainer-2 {
+  max-width: 1000px;
+  margin-top: 3rem;
+
+  border-radius: 15px;
+}
+.css-j9x724 {
+  display: flex !important;
+  
 }

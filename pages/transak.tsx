@@ -3,6 +3,7 @@ import Head from "next/head";
 import { HorizontalNarbar } from "../components";
 import BuyCrypto from "../components/DefiInterfaces/BuyCrypto";
 import styles from "../styles/Home.module.css";
+import "../styles/Home.module.css"
 import { Box, useColorModeValue } from "@chakra-ui/react";
 
 export default function Swapinterface() {
