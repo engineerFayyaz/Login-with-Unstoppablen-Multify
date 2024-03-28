@@ -51,43 +51,43 @@ const SocialButton = ({ children, label, href }: SocialButtonProps) => {
 // SmallCentered component
 export default function SmallCentered() {
   return (
-    <Box
-      bg={useColorModeValue("white", "gray.800")}
-      color={useColorModeValue("gray.700", "gray.200")}
-    >
-      <Box>
-        <Container
-          position="fixed"
-          bottom="5rem"
-          left="0.3rem"
-          as={Stack}
-          maxW={"6xl"}
-          py={4}
-          mt ={100}
-          direction={{ base: "column", md: "row" }}
-          spacing={4}
-          justify={{ base: "center", md: "space-between" }}
-          align={{ base: "center", md: "center" }}
-        >
-          <Stack direction="row" spacing={6}>
-            <SocialButton
-              label="Twitter"
-              href="https://twitter.com/codesinc_pak"
-            >
-              <FaTwitter />
-            </SocialButton>
-            <SocialButton label="Discord" href="#">
-              <FaDiscord />
-            </SocialButton>
-            <SocialButton
-              label="Github"
-              href="#"
-            >
-              <FaGithub />
-            </SocialButton>
-          </Stack>
-        </Container>
-      </Box>
-    </Box>
+    // <Box
+    //   bg={useColorModeValue("white", "gray.800")}
+    //   color={useColorModeValue("gray.700", "gray.200")}
+    // >
+    //   <Box>
+    //     <Container
+    //       position="fixed"
+    //       bottom="5rem"
+    //       left="0.3rem"
+    //       as={Stack}
+    //       maxW={"6xl"}
+    //       py={4}
+    //       mt ={100}
+    //       direction={{ base: "column", md: "row" }}
+    //       spacing={4}
+    //       justify={{ base: "center", md: "space-between" }}
+    //       align={{ base: "center", md: "center" }}
+    //     >
+    //       <Stack direction="row" spacing={6}>
+    //         <SocialButton
+    //           label="Twitter"
+    //           href="https://twitter.com/codesinc_pak"
+    //         >
+    //           <FaTwitter />
+    //         </SocialButton>
+    //         <SocialButton label="Discord" href="#">
+    //           <FaDiscord />
+    //         </SocialButton>
+    //         <SocialButton
+    //           label="Github"
+    //           href="#"
+    //         >
+    //           <FaGithub />
+    //         </SocialButton>
+    //       </Stack>
+    //     </Container>
+    //   </Box>
+    // </Box>
   );
 }
