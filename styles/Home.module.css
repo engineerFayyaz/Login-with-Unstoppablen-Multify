@@ -116,18 +116,12 @@
   }
 }
 
+
 .css-1ia1vse {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-margin-start: var(--chakra-space-10);
-  margin-inline-start: var(--chakra-space-10);
-  -webkit-margin-end: var(--chakra-space-10);
-  margin-inline-end: var(--chakra-space-10);
-  bottom: var(--chakra-space-10);
-  position: fixed !important;
-  top: 32rem !important;
-  left: -1rem !important;
+  margin-left: 20px !important;
 }
 
+
+.chakra-stack.chakra-container.css-1twtk95 {
+  margin-top: 150px !important;
+}
