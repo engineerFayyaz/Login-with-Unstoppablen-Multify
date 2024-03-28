@@ -82,7 +82,9 @@ export default function VerticalNarbar() {
       borderColor={BoxBorderColor}
       borderRightWidth="1px"
       borderRadius="xl"
-      w="45"
+      w={{ base: "0", md: "64" }} 
+      transition=".3s ease"
+      className="md:w-64 lg:w-72"
       {...props}
     >
       <Flex justifyContent="center" my="8">
@@ -138,7 +140,7 @@ export default function VerticalNarbar() {
       </Flex>
       <DarkModeButton />
       <SocialMediaButton />
-      <Flex mx="10" bottom={10} pos="fixed">
+      {/* <Flex mx="10" bottom={10} pos="fixed">
         <Text
           mb={2}
           color={useColorModeValue("green.400", "gray.400")}
@@ -150,7 +152,7 @@ export default function VerticalNarbar() {
         >
           made 🤍 by Codesinc
         </Text>
-      </Flex>
+      </Flex> */}
     </Box>
   );
 

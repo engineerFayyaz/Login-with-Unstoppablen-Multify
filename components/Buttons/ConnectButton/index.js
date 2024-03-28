@@ -48,6 +48,9 @@ export default function WalletModel() {
         leftIcon={<GiWallet />}
         onClick={() => connect()}
         shadow="lg"
+        w={{ base: "full", md: "auto" }} 
+        px={{ base: "4", md: "6" }}
+        py="3"
       >
         Connect Wallet
       </Button>

@@ -39,33 +39,34 @@ export default function SelectButton({ getChain }) {
       as="nav"
       pos="fixed"
       top="0"
-      mt={24}
+      mt={{ base: 24, md: 0 }}
       right={0}
       zIndex="sticky"
-      maxH="550"
+      maxH={{ base: "unset", md: 550 }}
       pb="10"
       overflowX="hidden"
       overflowY="auto"
       bg={BoxBgColor}
       borderColor={BoxBorderColor}
       borderRightWidth="1px"
-      w="60"
+      w={{ base: "full", md: 60 }}
       borderRadius="xl"
       shadow="lg"
     >
-      <Stack direction="column">
+       <Stack direction={{ base: "column", md: "row" }} ml={-3}>
         <form onSubmit={getChain}>
           <FormControl>
-            <Stack mt={2} mx={2} spacing={1} direction="row">
+          <Stack mt={2} mx={2} spacing={1} direction={{ base: "column", md: "row" }} alignItems={{ base: "center", md: "flex-start" }}>
               <Select
                 textAlign="center"
-                maxW={118}
+                maxW={{ base: "full", md: 118 }} 
                 name="chainId"
                 type="number"
                 borderWidth={1}
                 borderColor={ButtonBorderColorMode1}
                 bg={ButtonColorMode1}
                 shadow="lg"
+                mb={{ base: 2, md: 0 }}
               >
                 <option name="chainId" value="1">
                   Ethereum
@@ -104,11 +105,11 @@ export default function SelectButton({ getChain }) {
             </Stack>
           </FormControl>
 
-          <Flex justifyContent="space-around">
+          <Flex justifyContent="space-around" flexWrap="wrap">
             <RadioGroup
               my={5}
               textAlign="left"
-              maxW={150}
+              maxW={{ base: "full", md: 150 }}
               name="dexName"
               type="number"
               defaultValue="uniswap_v2"
@@ -126,7 +127,7 @@ export default function SelectButton({ getChain }) {
               </Text>
               <Stack
                 spacing={1.5}
-                direction="column"
+                direction={{ base: "column", md: "row" }}
                 textTransform="uppercase"
                 fontWeight="semibold"
                 fontSize="xs"

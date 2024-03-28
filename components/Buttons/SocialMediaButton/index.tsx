@@ -10,6 +10,10 @@ import {
 import { FaTwitter, FaDiscord, FaGithub } from "react-icons/fa";
 import { ReactNode } from "react";
 
+
+// import "../../../styles/Home.module.css";
+
+
 const SocialButton = ({
   children,
   label,
@@ -49,14 +53,16 @@ export default function SmallCentered() {
       bg={useColorModeValue("white", "gray.800")}
       color={useColorModeValue("gray.700", "gray.200")}
     >
-      <Box>
+      {/* <Box>
         <Container
-          position="fixed"
+          position="relative"
+          top ="30rem"
           bottom="5rem"
           left="0.3rem"
           as={Stack}
           maxW={"6xl"}
           py={4}
+          mt ={100}
           direction={{ base: "column", md: "row" }}
           spacing={4}
           justify={{ base: "center", md: "space-between" }}
@@ -80,7 +86,7 @@ export default function SmallCentered() {
             </SocialButton>
           </Stack>
         </Container>
-      </Box>
+      </Box> */}
     </Box>
   );
 }

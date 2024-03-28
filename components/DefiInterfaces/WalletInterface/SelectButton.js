@@ -24,7 +24,7 @@ export default function SelectButton({ getWallet }) {
   return (
     <form onSubmit={getWallet}>
       <FormControl>
-        <Stack spacing={1} direction="row">
+      <Stack spacing={1} direction={{ base: "column", md: "row" }} alignItems={{ base: "center", md: "flex-start" }}>
           <Input
             bg={InputBgColorMode}
             borderColor="gray.500"
@@ -35,16 +35,18 @@ export default function SelectButton({ getWallet }) {
             //textTransform="uppercase"
             placeholder="Account Address 0x00f7....454 Ens Domain"
             shadow="lg"
+            mb={{ base: 2, md: 0 }}
           />
 
           <Select
             textAlign="center"
-            maxW={150}
+            maxW={{ base: "full", md: 150 }}
             borderColor={ButtonBorderColorMode1}
             name="chainId"
             type="number"
             bg={ButtonColorMode1}
             shadow="lg"
+            mb={{ base: 2, md: 0 }}
           >
             <option name="chainId" value="1">
               Ethereum

@@ -94,7 +94,7 @@ export default function SelectButton(props) {
             </Stack>
           </FormControl>
 
-          <Box mx="xl">
+          <Box mx={{ base: "4", md: "xl" }}>
             <RadioGroup
               my={2}
               textAlign="left"
@@ -103,8 +103,8 @@ export default function SelectButton(props) {
               defaultValue="sushiswap"
             >
               <SimpleGrid
-                spacing={5}
-                direction="row"
+               spacing={{ base: "2", md: "5" }}
+               direction={{ base: "column", md: "row" }}
                 textTransform="uppercase"
                 fontWeight="normal"
                 fontSize="xs"
